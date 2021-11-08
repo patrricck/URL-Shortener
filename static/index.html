@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap-filestyle.min.js"> </script>
+<script type="text/javascript" src="fileUpload.js"></script>
+  <style>
+    .center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    }
+    body{
+      background-color: #2c2f33;
+    }
+    textarea {
+        border-style: none;
+        border-color: Transparent;
+        overflow: auto;
+        outline: none;
+    }
+    #success{
+      width:220px;
+      height:50px;
+    }
+  </style>
+  <title>Private URL Spoofer</title>
+</head>
+<body class="center">
+  <div class="container">
+    <h1 class="text-light"><b> Private URL Spoofer </h1></b>
+    <h5 class="text-light"> Create a spoofed link that destructs on <i>x</i> clicks. </h2>
+    <form action="/shortURL" method="POST">
+      <input required placeholder="URL goes here" type="url" name="fullURL" id="fullURL" class="my-3 form-control col" cols="100">
+      <input placeholder="Number of clicks before destruction" type="number" name="clicksAllowed" id="clicksAllowed" class="my-3 form-control col" cols="100" min="1" max="1000">
+      <button type="submit" class="btn btn-primary"> Spoof URL </button>
+    </form>
+    </div>
+</body>
